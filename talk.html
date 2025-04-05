@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Let's Talk About - Lumina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="home.html">LUMINA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <!--Nav Items -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="health&wellness.html">Health &amp; Wellness</a></li>
+          <li class="nav-item"><a class="nav-link" href="retirement.html">Retirement Planning</a></li>
+          <li class="nav-item"><a class="nav-link" href="healthcare&insurance.html">Healthcare &amp; Insurance</a></li>
+          <li class="nav-item"><a class="nav-link" href="emergency.html">Emergency Resources &amp; Assistance</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel&leisure.html">Travel &amp; Leisure</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Digital &amp; Technology Resources</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="talk.html">Let's Talk About</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+        <!-- Right-side: Sign In / Register -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <h1>Let's Talk About</h1>
+    <p>Join the conversation in our community forums and discussions on various topics.</p>
+  </div>
+
+  <!-- Toggle Color Button -->
+  <button class="btn btn-secondary color-toggle" onclick="toggleColor()">Toggle Color</button>
+
+  <!-- Login & Register Modals (same as before) -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="registerPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="registerPassword" required />
+            </div>
+            <div class="mb-3">
+              <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="registerConfirmPassword" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center p-3">
+    <h5>FOOTER FOOTER FOOTER</h5>
+    <p>This site is designed by DesignSphere</p>
+    <div>
+      <a href="#" class="text-dark me-3" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#" class="text-dark me-3" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#" class="text-dark me-3" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href="#" class="text-dark me-3" title="LinkedIn"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href="#" class="text-dark" title="Pinterest"><i class="fab fa-pinterest fa-2x"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleColor() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
