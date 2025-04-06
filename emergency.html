@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Emergency Resources &amp; Assistance - Lumina</title>
+  <title>Emergency Resources - Lumina</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,7 +20,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
-        <!-- Ordered Nav Items -->
+        <!-- Nav Items -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="health&wellness.html">Health &amp; Wellness</a></li>
           <li class="nav-item"><a class="nav-link" href="retirement.html">Retirement Planning</a></li>
@@ -32,17 +35,31 @@
         </ul>
         <!-- Right-side: Sign In / Register -->
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Hero Section -->
   <div class="container my-5">
-    <h1>Emergency Resources &amp; Assistance</h1>
-    <p>In an emergency, call 911 or your local emergency number. This page provides urgent resources, hotline information, and guidance.</p>
+    <div class="row align-items-center">
+      <!-- Left: Text -->
+      <div class="col-md-6 mb-4 order-md-1">
+        <h1>Emergency Resources &amp; Assistance</h1>
+        <p>Find immediate help and resources for urgent situations, from medical emergencies to disaster relief.</p>
+        <button class="btn btn-danger">Get Help Now</button>
+      </div>
+      <!-- Right: Image -->
+      <div class="col-md-6 text-center order-md-2">
+        <img src="images/emergency.png" alt="Emergency Support" class="img-fluid rounded" />
+      </div>
+    </div>
   </div>
 
   <!-- Toggle Color Button -->
@@ -72,6 +89,7 @@
       </div>
     </div>
   </div>
+
   <!-- Register Modal -->
   <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel">
     <div class="modal-dialog">
@@ -114,6 +132,7 @@
     </div>
   </footer>
 
+  <!-- Bootstrap JS + Toggle Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     function toggleColor() {
