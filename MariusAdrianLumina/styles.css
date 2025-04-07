@@ -1,0 +1,144 @@
+/* Basic resets and transitions */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #9c72b7;
+  color: #ffffff;
+}
+
+/* Navbar brand styling  */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Ensure images display properly */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero Section spacing */
+.container.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Toggle Color Button positioning */
+.color-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+}
+
+/* Container must be relative for footer placement */
+.container {
+  position: relative;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #23e882;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1rem;
+  color: #000;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 650px;
+}
+
+footer h5 {
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+/* Footer Social Media Icons */
+footer a {
+  color: inherit;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+footer a:last-child {
+  margin-right: 0;
+}
+
+/* Navbar Button Styles */
+.btn-group .btn-primary,
+.btn-group .btn-outline-primary:hover,
+.btn-group .btn-outline-primary:focus,
+.btn-group .btn-outline-primary:active {
+  background-color: #D891DA;
+  border-color: #D891DA;
+  color: #ffffff;
+}
+
+.btn-group .btn-outline-primary {
+  color: #000000;
+  border-color: #d147d6;
+}
+
+/* Subpage Links Styling */
+.subpage-links {
+  font-size: 1.2rem;  /* Increase font size */
+  font-weight: bold;  /* Make links bold */
+  color: #000000;     /* Blue color for better visibility */
+  padding: 0.5rem 0;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.subpage-links:hover {
+  color: #0056b3;
+}
+/* LUMINA Logo Styling */
+/* LUMINA Logo Styling */
+.navbar-brand {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #23e882; /* Green Background */
+  color: white; /* Text Color */
+  border: 3px solid #23e882; /* Green Border */
+  border-radius: 10px; /* Rounded corners */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+}
+/* Sign In / Sign Up Buttons Styling */
+.btn-signin, .btn-register:hover {
+  background-color: red;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-signin:hover, .btn-register:hover {
+  background-color: darkred;
+}
+/* Section Titles Styling */
+.section-title {
+  color: red;
+  font-weight: bold;
+}
+.accordion-button {
+  color: red;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  color: darkred;
+}
+
